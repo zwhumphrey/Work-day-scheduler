@@ -107,3 +107,12 @@ workDay.forEach(function(currentHour) {
     savePlan.append(saveButton);
     hourRow.append(hourField, hourPlan, savePlan);
 });
+
+// save on local storage
+function saveTask() {
+    localStorage.setItem("workDay", JSON.stringify(myDay));
+
+    saveTask();
+}
+
+console.log(saveTask);
